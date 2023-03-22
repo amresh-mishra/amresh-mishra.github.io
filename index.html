@@ -7,8 +7,8 @@
 <html>
 	<head>
 		<title>AMRESH MISHRA'S PORTFOLIO</title>
-		<meta charset="utf-8" />
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -16,6 +16,155 @@
 	<style>
  
 	.material-icons {vertical-align:-20%}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.fa-heart {
+  color: red;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #333;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+}
+
+.footer {
+  position: relative;
+  width: 50%;
+  background: #5f6163;
+  min-height: 5px;
+  padding: 2px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
 
 	</style>
 	</head>
@@ -32,34 +181,32 @@
 						
 						<div class="content">
 							<div class="inner">
-								<h4>cONNECT WITH ME</h4>
-									<ul class="icons">
-										
-										<li><a href="https://www.linkedin.com/in/amreshmishra247/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-									
-										<li><a href="https://github.com/amresh247" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+								
 								<h1>AMRESH MISHRA'S PORTFOLIO</h1>
 								<p>Data science intern | Actively looking for Data Science Job roles<br>  Advance Certification in Data Science from CCE-IIT Madras<br> 5🌟 Python HackerRank </p>
 							</div>
-							</div>
 						</div>
-						<nav>
+						
+						<nav> 
 							<ul>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#Projects">&nbsp&nbsp&nbsp&nbspProjects&nbsp&nbsp&nbsp&nbsp</a></li>
-								<li><a href="#INTERNSHIPS"> Internship</a></li>
+								<li><a href="#INTERNSHIPS">Internship</a></li>
 								<li><a href="#CERTIFICATION">CERTIFICATION</a></li>
-								
+								 
 								
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
+					
 					</header>
 
 				<!-- Main -->
 					<div id="main">
-
+						<a href="index.html">
+							<i class="material-icons w3-jumbo">home</i> 
+							
+						 </a>
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
@@ -76,28 +223,26 @@
 									 Executive Client Acquisition</b>  
 										and   <b>6 months Internship</b> experience in <b>Digit Marketing</b> </p>
 									 
-									<h2><B>Basic Details</B></h2>
-									<h3>&#10004;  NAME : AMRESH MISHRA</h3>
-									<h3>&#10004; LOCATION : LUCKNOW</h3>
-									<h3>&#10004;DOB:22/01/96</h3>
-									<h3>&#10004;; EDUCATION :
+									<h3><B>Basic Details</B></h3>
+									<h4>&#10004;  NAME : AMRESH MISHRA</h4>
+									<h4>&#10004; LOCATION : LUCKNOW</h4>
+									<h4>&#10004;DOB:22/01/96</h4>
+									<h4>&#10004; EDUCATION :
 										<H4> POSTGRADUATION : MBA(IT AND MARKETING)-HONS | AKTU-2022 | 8.1 CGPA <br>
 											 GRADUATION : BCA | IGNOU | 2017 | 60%<br>
 											 12TH : PCM	| 2012 |70%<br>
 											 10TH : 2010 | 60%
 										</H4> 
 									</h3>
-								    	<h3>&#x2706;CONTACT NO : 8181925102 </h3>
-									<h3>&#x2706;EMAIL ID : AMRESHMISHRA247@GMAIL.COM </h3>
-									<h3>&#x2706;HOBBIES : </h3>
+								    <h4>&#x2706;CONTACT NO : 8181925102 </h4>
+									<h4>&#x2706;EMAIL ID : AMRESHMISHRA247@GMAIL.COM </h4>
+									<h4>&#x2706;HOBBIES : </h4>
 									<h4>&#10004;POETRY WRITING AND PHOTOGRAPHY</h4>
 							
 							
 							</article>
 						<!-- project -->
-							<a href="index.html">
-							<i class="material-icons w3-jumbo">home</i> 
-							</a>
+						
 							<article id="Projects">
 							<h2 class="major">PROJECTS</h2>
 							<span class="image main"><img src="images/PRO1.jpg" alt="" /></span>
@@ -223,8 +368,7 @@
 							
 							</article>
 						<!-- Work -->
-								
-						       <article id="INTERNSHIPS">
+							<article id="INTERNSHIPS">
 								<h2 class="major">INTERNSHIPS</h2>
 								<span class="image main"><img src="images/im45.jpg" alt="" /></span>
 								
@@ -240,7 +384,7 @@
 
 							</article>
 						<!-- CERTIFICATION -->
-							
+						
 						<article id="CERTIFICATION">
 							<h2 class="major">CERTIFICATION </h2>
 							<span class="image main"><img src="images/CERTIFICATE.jpg" alt="" /></span>
@@ -550,9 +694,36 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+				<span></span>
+				<footer class="footer">
+					
+					<ul class="social-icon">
+					  <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/amresh247">
+						  <ion-icon name="logo-github"></ion-icon>
+						</a></li>
+					  <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/amreshmishra247/">
+						  <ion-icon name="logo-linkedin"></ion-icon>
+						</a></li>
+					  
+					  <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/Theist_Amresh">
+						  <ion-icon name="logo-twitter"></ion-icon>
+						</a></li>
+					  
+					  <li class="social-icon__item"><a class="social-icon__link" href="#">
+						  <ion-icon name="logo-instagram"></ion-icon>
+						</a></li>
+					</ul>
+					<ul class="menu">
+					  <li class="menu__item"><a class="menu__link" href="https://amresh247.github.io/index.html">Home</a></li>
+				
+				
+					 
+					  <li class="menu__item"><a class="menu__link" href=""mailto:amreshmishra247@gmail.com"">Email</a></li>
+				
+					</ul>
+					
+				  </footer>
+				  
 
 			</div>
 
@@ -560,6 +731,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+			<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+			<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>	
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
